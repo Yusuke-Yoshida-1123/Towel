@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Towel</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300&family=Noto+Sans+JP:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300&family=Noto+Sans+JP:wght@300&family=Zen+Old+Mincho&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="img/icon.png">
+</head>
+
+<body>
+    <header>
+        <section class="header-top">
+            <h1><a href="#"><img src="img/logo.jpg" class="logo"></a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#concept">CONCEPT</a></li>
+                    <li class="nav-list">
+                        <a href="#list" class="list-a">LIST</a>
+                        <div class="open">
+                            <ul>
+                                <li><a href="#imabari-towel">今治タオル</a></li>
+                                <li><a href="#senshu-towel">泉州タオル</a></li>
+                                <li><a href="#oboro-towel">おぼろタオル</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="mailto:info@example.com?subject=お問い合わせ">CONTACT</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="header-bottom">
+            <ul class="slide-items">
+                <li><img src="img/slick用.jpg"></li>
+                <li><img src="img/slick用泉州タオル.webp"></li>
+                <li><img src="img/slick用おぼろタオル.jpg"></li>
+            </ul>
+        </section>
+    </header>
+    <main>
+        <section class="about wrapper" id="about">
+            <section class="about-img">
+                <img src="img/タオル積み重ね編集済み.jpg">
+            </section>
+            <section class="about-text">
+                <h2>ABOUT</h2>
+                <div>
+                    <p>日々の暮らしを豊かにする<br>上品で使い心地のいい<br>日本製タオルの紹介</p>
+                </div>
+                <a href="#">VIEW MORE</a>
+
+            </section>
+        </section>
+        <section class="concept wrapper" id="concept">
+            <section class="concept-text">
+                <h2>CONCEPT</h2>
+                <div>
+                    <p>毎日触れるものだから
+                        触り心地にこだわりを
+                    </p>
+                </div>
+                <a href="#">VIEW MORE</a>
+
+            </section>
+            <section class="concept-img">
+                <div><img src="img/壁掛けタオル.jpg"></div>
+            </section>
+        </section>
+        <article id="list">
+            <h2>LIST</h2>
+            <section class="imabari introduce" id="imabari-towel">
+                <div class="left"><img src="img/今治タオル１枚.jpg" class="towel1"></div>
+
+                <section class="imabari-text list-text right">
+                    <section>
+                        <h3>今治タオル</h3>
+                        <p>愛媛県今治市の豊かな自然によって生み出される
+                            やさしく繊細なタオル。職人の技と細部にわたるこだわりの
+                            詰まった、世界を感動させる一品。
+                            独自の品質検査により、高品質を約束。</p>
+                    </section>
+                    <img src="img/今治タオル画像２.jpg">
+                </section>
+            </section>
+            <section class="senshu introduce" id="senshu-towel">
+                <section class="senshu-text list-text left">
+                    <section>
+                        <h3>泉州タオル</h3>
+                        <p>明治20年から大阪泉州の地で作られてきた歴史のある
+                            タオル。「後ざらし」という製法により綿本来の特性を
+                            最大限に活かすことで生まれる吸水性に優れた肌触りのいい
+                            タオル。</p>
+                    </section>
+                    <img src="img/泉州タオル用長方形素材.jpg">
+
+                </section>
+                <div class="right"><img src="img/泉州.jpg" class="towel2"></div>
+            </section>
+            <section class="oboro introduce" id="oboro-towel">
+                <div class="left"><img src="img/おぼろ100年の極 編集済み.jpg" class="towel1"></div>
+                <section class="imabari-text list-text right">
+                    <section>
+                        <h3>おぼろタオル</h3>
+                        <p>三重県津市で誕生したタオル。
+                            横糸だけに色を染める「おぼろ染め」という技術によって
+                            染められたおぼろタオルは高い吸水性と絞りやすさが特徴。
+                            乾いた状態だと模様がおぼろげに見え、水に濡らすとくっきり
+                            浮かび上がる。</p>
+                    </section>
+                    <img src="img/おぼろ百年の極.jpg">
+                </section>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <img src="img/footer_logo.jpg" class="logo">
+        <ol>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#concept">CONCEPT</a></li>
+            <li>
+                <div>
+                    <a href="#list">LIST</a>
+                    <ul>
+                        <li><a href="#imabari-towel">今治タオル</a></li>
+                        <li><a href="#senshu-towel">泉州タオル</a></li>
+                        <li><a href="#oboro-towel">おぼろタオル</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="mailto:info@example.com?subject=お問い合わせ">CONTACT</a></li>
+        </ol>
+        <p>MY TOWEL@2025</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
