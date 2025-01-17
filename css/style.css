@@ -1,0 +1,475 @@
+.header-top {
+  margin-inline: auto;
+  height: calc(12vh - 40px);
+  padding-inline: 20px;
+}
+@media (max-width: 390px) {
+  .header-top {
+    height: 8vh;
+  }
+}
+.header-top h1 {
+  text-align: center;
+  margin-bottom: 8px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  background-color: white;
+  margin: 0;
+}
+.header-top ul {
+  list-style: none;
+  display: flex;
+  text-align: center;
+  margin-top: 40px;
+}
+@media (max-width: 390px) {
+  .header-top ul {
+    display: none;
+  }
+}
+.header-top ul li {
+  width: 25%;
+  font-family: "Inria Serif";
+  font-size: 24px;
+}
+.header-top ul li a {
+  display: inline-block;
+}
+.header-top .nav-list {
+  position: relative;
+}
+.header-top .nav-list .open {
+  background-color: white;
+  position: absolute;
+  right: calc(50% - 50px);
+  z-index: 4;
+  width: 100px;
+  height: 100px;
+  margin-inline: auto;
+  margin-top: 0;
+  opacity: 1;
+  visibility: hidden;
+  transition: all 0.3s;
+  transform: translateY(-20%);
+}
+.header-top .nav-list .open ul {
+  flex-direction: column;
+  margin-top: 0;
+}
+.header-top .nav-list .open ul li {
+  width: 100%;
+}
+.header-top .nav-list .open a {
+  font-size: 16px;
+  font-family: "Zen Old Mincho";
+}
+
+.header-bottom {
+  overflow: hidden;
+  height: 88vh;
+}
+.header-bottom img {
+  height: 90vh;
+  width: 100%;
+}
+@media (max-width: 390px) {
+  .header-bottom {
+    height: 92vh;
+  }
+  .header-bottom img {
+    height: 92vh;
+  }
+}
+
+main {
+  max-width: 1040px;
+  padding-inline: 20px;
+  margin-inline: auto;
+  margin-top: 56px;
+}
+@media (max-width: 680px) {
+  main {
+    padding-inline: 40px;
+    margin-top: 0;
+  }
+}
+main .wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 56px;
+  text-align: center;
+}
+@media (max-width: 680px) {
+  main .wrapper {
+    flex-direction: column;
+  }
+}
+@media (max-width: 680px) {
+  main .wrapper img {
+    margin-block: 48px;
+  }
+}
+main .wrapper p,
+main .wrapper h2 {
+  text-align: left;
+}
+main .wrapper p {
+  font-size: 24px;
+}
+main .wrapper div {
+  margin-bottom: 40px;
+}
+@media (max-width: 680px) {
+  main .wrapper div {
+    margin-block: 32px;
+  }
+}
+main .wrapper a {
+  position: relative;
+  bottom: 0;
+}
+main .wrapper a::after {
+  content: "";
+  width: 40px;
+  height: 1px;
+  background-color: black;
+  position: absolute;
+  bottom: -2px;
+  right: calc(50% - 20px);
+  transition: all 0.3s;
+}
+main .wrapper a:hover::after {
+  width: 90px;
+  right: calc(50% - 45px);
+}
+main .about-text {
+  margin-left: 80px;
+}
+@media (max-width: 680px) {
+  main .about-text {
+    margin: 0;
+  }
+  main .about-text br {
+    display: none;
+  }
+}
+main .about-img {
+  vertical-align: bottom;
+}
+main .about section {
+  width: 455px;
+}
+@media (max-width: 680px) {
+  main .about section {
+    width: 100%;
+  }
+}
+@media (max-width: 680px) {
+  main .concept {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+}
+main .concept img {
+  width: 354px;
+  display: block;
+}
+@media (max-width: 680px) {
+  main .concept img {
+    width: calc(100vw - 80px);
+    height: calc(100vw - 80px);
+  }
+}
+main .concept-text {
+  width: 455px;
+}
+@media (max-width: 680px) {
+  main .concept-text {
+    width: 100%;
+  }
+}
+main .concept-text p {
+  width: 240px;
+}
+@media (max-width: 680px) {
+  main .concept-text p {
+    width: 100%;
+  }
+}
+main .concept-img {
+  width: 455px;
+  margin-left: 80px;
+  text-align: left;
+}
+main .concept-img div {
+  display: inline-block;
+  position: relative;
+  z-index: 3;
+}
+main .concept-img div::after {
+  content: "";
+  width: 142px;
+  height: 185px;
+  background-color: rgba(26, 24, 24, 0.22);
+  filter: blur(10px);
+  position: absolute;
+  z-index: 1;
+  bottom: -10%;
+  right: -10%;
+}
+@media (max-width: 1040px) {
+  main .concept-img div::after {
+    right: -20px;
+  }
+}
+@media (max-width: 680px) {
+  main .concept-img div::after {
+    display: none;
+  }
+}
+@media (max-width: 680px) {
+  main .concept-img {
+    margin: 0;
+    width: 100%;
+  }
+}
+main article {
+  margin-bottom: 200px;
+}
+@media (max-width: 680px) {
+  main article {
+    margin-bottom: 136px;
+  }
+}
+main article .introduce {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 680px) {
+  main article .introduce {
+    margin-top: 32px;
+    flex-direction: column;
+  }
+}
+main article h2 {
+  text-align: center;
+}
+main article .towel1,
+main article .towel2 {
+  height: 432px;
+}
+main article .left,
+main article .right {
+  width: 432px;
+}
+@media (max-width: 680px) {
+  main article .left,
+  main article .right {
+    width: 100%;
+  }
+}
+main article .left {
+  margin-right: 80px;
+}
+@media (max-width: 680px) {
+  main article .left {
+    margin: 0;
+  }
+}
+@media (max-width: 680px) {
+  main article .right {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+main article .list-text {
+  text-align: left;
+}
+main article .list-text p {
+  margin-block: 64px;
+}
+@media (max-width: 680px) {
+  main article .list-text p {
+    margin-top: 16px;
+    margin-bottom: 0;
+  }
+}
+main article .list-text img {
+  height: 304px;
+  width: 100%;
+}
+main article .imabari .towel1 {
+  -o-object-position: center;
+     object-position: center;
+}
+main article .imabari .towel2 {
+  -o-object-position: left;
+     object-position: left;
+}
+main article .senshu {
+  margin-block: 96px;
+}
+@media (max-width: 680px) {
+  main article .senshu {
+    margin-bottom: 0;
+    margin-top: 32px;
+    flex-direction: column-reverse;
+  }
+  main article .senshu-text {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  main article .senshu-text img {
+    width: 60vw;
+    height: 40vw;
+  }
+  main article .senshu .towel2 {
+    width: calc(50vw - 40px);
+    height: calc(50vw - 40px);
+    margin-left: 50%;
+    margin-bottom: 16px;
+  }
+}
+main article .oboro .towel1 {
+  -o-object-position: left;
+     object-position: left;
+}
+@media (max-width: 680px) {
+  main article .imabari .towel1,
+  main article .oboro .towel1 {
+    width: calc(50vw - 40px);
+    height: calc(50vw - 40px);
+  }
+}
+@media (max-width: 680px) {
+  main article .imabari .left,
+  main article .oboro .left {
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 680px) {
+  main article .imabari-text img,
+  main article .oboro-text img {
+    width: 60vw;
+    height: 40vw;
+    margin-left: calc(40vw - 80px);
+  }
+}
+
+footer {
+  text-align: center;
+  background-color: #bfbfbf;
+  padding-bottom: 40px;
+}
+@media (max-width: 680px) {
+  footer {
+    padding-inline: 40px;
+    padding-bottom: 16px;
+  }
+}
+footer ol {
+  margin-top: 64px;
+  list-style: none;
+  display: flex;
+  max-width: 1040px;
+  margin-inline: auto;
+}
+@media (max-width: 680px) {
+  footer ol {
+    flex-direction: column;
+    margin-left: 48px;
+    margin-top: 32px;
+  }
+}
+footer ol li {
+  width: 25%;
+  font-size: 32px;
+  font-family: "Inria Serif";
+  text-align: center;
+}
+@media (max-width: 680px) {
+  footer ol li {
+    width: 100%;
+    text-align: left;
+    margin-top: 32px;
+  }
+}
+footer ol ul {
+  margin-top: 48px;
+}
+@media (max-width: 680px) {
+  footer ol ul {
+    margin-top: 16px;
+    margin-left: 24px;
+  }
+}
+footer ol ul li {
+  font-size: 16px;
+  font-family: "Zen Old Mincho";
+  width: 70%;
+  margin-left: 30%;
+  list-style-type: disc;
+  list-style-position: inside;
+  text-align: left;
+  margin-bottom: 40px;
+}
+@media (max-width: 680px) {
+  footer ol ul li {
+    width: calc(100% - 24px);
+    margin-left: 24px;
+    margin-bottom: 0;
+    margin-top: 16px;
+  }
+}
+footer p {
+  font-size: 10px;
+}
+@media (max-width: 680px) {
+  footer p {
+    margin-top: 80px;
+  }
+}
+
+img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: bottom;
+}
+
+h2 {
+  font-family: "Inria serif";
+  font-size: 32px;
+  color: #0084F7;
+  margin-bottom: 88px;
+}
+@media (max-width: 680px) {
+  h2 {
+    margin: 0;
+  }
+}
+
+h3, p {
+  font-family: "Zen Old Mincho";
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.logo {
+  height: 40px;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  margin: 0 auto;
+}/*# sourceMappingURL=style.css.map */

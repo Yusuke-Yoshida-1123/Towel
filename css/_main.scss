@@ -1,0 +1,317 @@
+@use 'mixin' as m;
+
+main {
+    max-width: 1040px;
+    padding-inline: 20px;
+    margin-inline: auto;
+    margin-top: 56px;
+
+    @include m.tab {
+        padding-inline: 40px;
+        margin-top: 0;
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 56px;
+        text-align: center;
+
+        @include m.tab {
+            flex-direction: column;
+        }
+
+        img {
+            @include m.tab {
+                margin-block: 48px;
+            }
+        }
+
+        p,
+        h2 {
+            text-align: left;
+        }
+
+        p {
+            font-size: 24px;
+        }
+
+        div {
+            margin-bottom: 40px;
+
+            @include m.tab {
+                margin-block: 32px;
+            }
+        }
+
+        a {
+
+            position: relative;
+            bottom: 0;
+
+            &::after {
+                content: "";
+                width: 40px;
+                height: 1px;
+                background-color: black;
+                position: absolute;
+                bottom: -2px;
+                right: calc(50% - 20px);
+                transition: all 0.3s;
+            }
+
+            &:hover {
+                &::after {
+                    width: 90px;
+                    right: calc(50% - 45px);
+                }
+            }
+
+        }
+    }
+
+    .about {
+
+        &-text {
+            margin-left: 80px;
+
+            @include m.tab {
+                margin: 0;
+
+                br {
+                    display: none;
+                }
+            }
+
+        }
+
+        &-img {
+            vertical-align: bottom;
+        }
+
+        section {
+            width: 455px;
+
+            @include m.tab {
+                width: 100%;
+            }
+        }
+    }
+
+    .concept {
+
+        @include m.tab {
+            flex-direction: column-reverse;
+            width: 100%;
+        }
+
+        img {
+            width: 354px;
+
+            display: block;
+            @include m.tab {
+                width: calc(100vw - 80px);
+                height: calc(100vw - 80px);
+            }
+        }
+
+
+        &-text {
+            width: 455px;
+
+            @include m.tab {
+                width: 100%;
+            }
+
+            p {
+                width: 240px;
+
+                @include m.tab {
+                    width: 100%;
+                }
+            }
+        }
+
+        &-img {
+            width: 455px;
+            margin-left: 80px;
+            text-align: left;
+
+            div {
+                display: inline-block;
+                position: relative;
+                z-index: 3;
+
+                &::after {
+                    content: "";
+                    width: 142px;
+                    height: 185px;
+                    background-color: rgba(26, 24, 24, 0.22);
+                    filter: blur(10px);
+                    position: absolute;
+                    z-index: 1;
+                    bottom: -10%;
+                    right: -10%;
+                    @include m.width{
+                        right:-20px;
+                    }
+                    @include m.tab{
+                        display: none;
+                    }
+                }
+            }
+
+            @include m.tab {
+                margin: 0;
+                width: 100%;
+            }
+        }
+    }
+
+
+
+    article {
+        margin-bottom: 200px;
+
+        @include m.tab {
+            margin-bottom: 136px;
+        }
+
+        .introduce {
+            display: flex;
+            justify-content: space-between;
+
+            @include m.tab {
+                margin-top: 32px;
+                flex-direction: column;
+            }
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .towel1,
+        .towel2 {
+            height: 432px;
+        }
+
+        .left,
+        .right {
+            width: 432px;
+
+            @include m.tab {
+                width: 100%;
+            }
+        }
+
+        .left {
+            margin-right: 80px;
+
+            @include m.tab {
+                margin: 0;
+            }
+        }
+
+        .right {
+            @include m.tab {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+        }
+
+        .list-text {
+            text-align: left;
+
+            p {
+                margin-block: 64px;
+
+                @include m.tab {
+                    margin-top: 16px;
+                    margin-bottom: 0;
+                }
+            }
+
+            img {
+                height: 304px;
+                width: 100%;
+            }
+        }
+
+        .imabari {
+            .towel1 {
+                object-position: center;
+            }
+
+            .towel2 {
+                object-position: left;
+            }
+        }
+
+        .senshu {
+            margin-block: 96px;
+
+            @include m.tab {
+                margin-bottom: 0;
+                margin-top: 32px;
+                flex-direction: column-reverse;
+
+                &-text {
+                    display: flex;
+                    flex-direction: column-reverse;
+
+                    img {
+                        width: 60vw;
+                        height: 40vw;
+                    }
+                }
+
+                .towel2 {
+                    width: calc(50vw - 40px);
+                    height: calc(50vw - 40px);
+                    margin-left: 50%;
+                    margin-bottom: 16px;
+                }
+
+            }
+        }
+
+        .oboro {
+            .towel1 {
+                object-position: left;
+            }
+        }
+
+        .imabari,
+        .oboro {
+            .towel1 {
+                @include m.tab {
+                    width: calc(50vw - 40px);
+                    height: calc(50vw - 40px);
+                }
+            }
+
+            .left {
+                @include m.tab {
+                    margin-bottom: 16px;
+                }
+            }
+
+        }
+
+        .imabari-text,
+        .oboro-text {
+
+            @include m.tab {
+
+                img {
+                    width: 60vw;
+                    height: 40vw;
+                    margin-left: calc(40vw - 80px);
+                }
+            }
+        }
+
+    }
+
+}

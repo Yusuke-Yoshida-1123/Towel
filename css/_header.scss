@@ -1,0 +1,96 @@
+@use 'mixin' as m;
+
+.header-top {
+    margin-inline: auto;
+    height: calc(12vh - 40px);
+    padding-inline: 20px;
+
+    @include m.sp {
+        height: 8vh;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 8px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        background-color: white;
+        margin: 0;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        text-align: center;
+        margin-top: 40px;
+
+        @include m.sp {
+            display: none;
+        }
+
+        li {
+            width: calc(100%/4);
+            font-family: 'Inria Serif';
+            font-size: 24px;
+
+            a {
+                display: inline-block;
+
+            }
+        }
+    }
+
+    .nav-list {
+        position: relative;
+
+        .open {
+            background-color: white;
+            position: absolute;
+            right: calc(50% - 50px);
+            z-index: 4;
+            width: 100px;
+            height: 100px;
+            margin-inline: auto;
+            margin-top:0;
+            opacity: 1;
+            visibility: hidden;
+            transition: all 0.3s;
+            transform: translateY(-20%);
+
+            ul {
+                flex-direction: column;
+                margin-top: 0;
+
+                li {
+                    width: 100%;
+                }
+            }
+
+            a {
+                font-size: 16px;
+                font-family: 'Zen Old Mincho';
+            }
+        }
+    }
+}
+
+.header-bottom {
+    overflow: hidden;
+    height: 88vh;
+
+    img {
+        height: 90vh;
+        width: 100%;
+    }
+
+    @include m.sp {
+        height: 92vh;
+
+        img {
+            height: 92vh;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+@use 'header';
+@use 'main';
+@use 'footer';
+@use 'mixin' as m;
+img{
+    max-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+h2{
+    font-family: 'Inria serif';
+    font-size: 32px;
+    color: #0084F7;
+    margin-bottom: 88px;
+    @include m.tab{
+        margin:0;
+    }
+}
+h3,p{
+    font-family: 'Zen Old Mincho';
+}
+h3{
+    font-size: 24px;
+}
+.logo{
+    height:40px;
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    margin:0 auto;
+}
